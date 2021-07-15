@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@formaxui/components": ["libs/components/src/index.ts"],
+      "@formaxui/glass": ["libs/components/src/lib/glass/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

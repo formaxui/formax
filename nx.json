@@ -14,7 +14,13 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
@@ -27,6 +33,16 @@
     ]
   },
   "projects": {
+    "components": {
+      "tags": []
+    },
+    "components-src-lib-glass": {
+      "tags": []
+    },
+    "components-src-lib-glass-e2e": {
+      "tags": [],
+      "implicitDependencies": ["components-src-lib-glass"]
+    },
     "website": {
       "tags": []
     },
