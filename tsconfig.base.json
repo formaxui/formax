@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@formaxui/button": ["libs/components/src/lib/button/src/index.ts"],
       "@formaxui/components": ["libs/components/src/index.ts"],
       "@formaxui/glass": ["libs/components/src/lib/glass/src/index.ts"]
     }

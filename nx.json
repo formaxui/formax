@@ -36,6 +36,13 @@
     "components": {
       "tags": []
     },
+    "components-src-lib-button": {
+      "tags": []
+    },
+    "components-src-lib-button-e2e": {
+      "tags": [],
+      "implicitDependencies": ["components-src-lib-button"]
+    },
     "components-src-lib-glass": {
       "tags": []
     },
