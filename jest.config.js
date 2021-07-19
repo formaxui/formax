@@ -5,5 +5,6 @@ module.exports = {
     '<rootDir>/libs/components/src/lib/glass',
     '<rootDir>/libs/components/src/lib/button',
     '<rootDir>/libs/types',
+    '<rootDir>/libs/storybook',
   ],
 };

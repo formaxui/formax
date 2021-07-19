@@ -6,7 +6,7 @@ import './button.module.scss';
 export const Button: FunctionComponent<IButtonProps> = ({ ...rest }) => {
   const { root } = Styles({});
 
-  return <Button children="Example button" {...rest} />;
+  return <button children="Example button" {...rest} {...root} />;
 };
 
 export default Button;

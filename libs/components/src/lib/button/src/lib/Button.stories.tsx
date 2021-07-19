@@ -3,7 +3,7 @@ import { Button, IButtonProps } from '.';
 
 export default {
   component: Button,
-  title: 'Button',
+  title: 'Components/Button',
 } as Meta;
 
 const Template: Story<IButtonProps> = (args) => <Button {...args} />;

@@ -182,6 +182,27 @@
         }
       }
     },
+    "storybook": {
+      "root": "libs/storybook",
+      "sourceRoot": "libs/storybook/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/storybook/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/storybook"],
+          "options": {
+            "jestConfig": "libs/storybook/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "types": {
       "root": "libs/types",
       "sourceRoot": "libs/types/src",
