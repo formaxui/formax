@@ -1,10 +1,11 @@
 import { CSSProperties } from 'react';
 import { Story, Meta } from '@storybook/react';
+import { getFullTitle, SECTION_KEYS } from '@formaxui/storybook';
 import { Glass, IGlassProps } from '.';
 
 export default {
   component: Glass,
-  title: 'Glass',
+  title: getFullTitle({ title: 'Glass', section: SECTION_KEYS.COMPONENTS }),
 } as Meta;
 
 const containerStyles: CSSProperties = {
