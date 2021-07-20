@@ -21,8 +21,10 @@
       "@formaxui/glass": ["libs/components/src/lib/glass/src/index.ts"],
       "@formaxui/storybook": ["libs/storybook/src/index.ts"],
       "@formaxui/style": ["libs/utils/src/lib/style/src/index.ts"],
+      "@formaxui/titlebar": ["libs/components/src/lib/titlebar/src/index.ts"],
       "@formaxui/types": ["libs/types/src/index.ts"],
-      "@formaxui/utils": ["libs/utils/src/index.ts"]
+      "@formaxui/utils": ["libs/utils/src/index.ts"],
+      "@formaxui/window": ["libs/components/src/lib/window/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

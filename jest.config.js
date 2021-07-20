@@ -9,5 +9,7 @@ module.exports = {
     '<rootDir>/libs/components/src/lib/base',
     '<rootDir>/libs/utils',
     '<rootDir>/libs/utils/src/lib/style',
+    '<rootDir>/libs/components/src/lib/window',
+    '<rootDir>/libs/components/src/lib/titlebar',
   ],
 };

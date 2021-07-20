@@ -49,6 +49,12 @@
     "components-src-lib-glass": {
       "tags": []
     },
+    "components-src-lib-titlebar": {
+      "tags": []
+    },
+    "components-src-lib-window": {
+      "tags": []
+    },
     "storybook": {
       "tags": []
     },

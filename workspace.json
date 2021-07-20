@@ -224,6 +224,90 @@
         }
       }
     },
+    "components-src-lib-titlebar": {
+      "root": "libs/components/src/lib/titlebar",
+      "sourceRoot": "libs/components/src/lib/titlebar/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/components/src/lib/titlebar",
+            "tsConfig": "libs/components/src/lib/titlebar/tsconfig.lib.json",
+            "project": "libs/components/src/lib/titlebar/package.json",
+            "entryFile": "libs/components/src/lib/titlebar/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/components/src/lib/titlebar/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/components/src/lib/titlebar/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/components/src/lib/titlebar"],
+          "options": {
+            "jestConfig": "libs/components/src/lib/titlebar/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "components-src-lib-window": {
+      "root": "libs/components/src/lib/window",
+      "sourceRoot": "libs/components/src/lib/window/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/components/src/lib/window",
+            "tsConfig": "libs/components/src/lib/window/tsconfig.lib.json",
+            "project": "libs/components/src/lib/window/package.json",
+            "entryFile": "libs/components/src/lib/window/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/components/src/lib/window/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/components/src/lib/window/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/components/src/lib/window"],
+          "options": {
+            "jestConfig": "libs/components/src/lib/window/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "storybook": {
       "root": "libs/storybook",
       "sourceRoot": "libs/storybook/src",
