@@ -15,11 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@formaxui/base": ["libs/components/src/lib/base/src/index.ts"],
       "@formaxui/button": ["libs/components/src/lib/button/src/index.ts"],
       "@formaxui/components": ["libs/components/src/index.ts"],
       "@formaxui/glass": ["libs/components/src/lib/glass/src/index.ts"],
       "@formaxui/storybook": ["libs/storybook/src/index.ts"],
-      "@formaxui/types": ["libs/types/src/index.ts"]
+      "@formaxui/style": ["libs/utils/src/lib/style/src/index.ts"],
+      "@formaxui/types": ["libs/types/src/index.ts"],
+      "@formaxui/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

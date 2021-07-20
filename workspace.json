@@ -98,6 +98,48 @@
         }
       }
     },
+    "components-src-lib-base": {
+      "root": "libs/components/src/lib/base",
+      "sourceRoot": "libs/components/src/lib/base/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/components/src/lib/base",
+            "tsConfig": "libs/components/src/lib/base/tsconfig.lib.json",
+            "project": "libs/components/src/lib/base/package.json",
+            "entryFile": "libs/components/src/lib/base/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/components/src/lib/base/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/components/src/lib/base/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/components/src/lib/base"],
+          "options": {
+            "jestConfig": "libs/components/src/lib/base/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "components-src-lib-button": {
       "root": "libs/components/src/lib/button",
       "sourceRoot": "libs/components/src/lib/button/src",
@@ -257,6 +299,88 @@
           "outputs": ["coverage/libs/types"],
           "options": {
             "jestConfig": "libs/types/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "utils": {
+      "root": "libs/utils",
+      "sourceRoot": "libs/utils/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/utils",
+            "tsConfig": "libs/utils/tsconfig.lib.json",
+            "project": "libs/utils/package.json",
+            "entryFile": "libs/utils/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/utils/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/utils/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/utils"],
+          "options": {
+            "jestConfig": "libs/utils/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "utils-src-lib-style": {
+      "root": "libs/utils/src/lib/style",
+      "sourceRoot": "libs/utils/src/lib/style/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/utils/src/lib/style",
+            "tsConfig": "libs/utils/src/lib/style/tsconfig.lib.json",
+            "project": "libs/utils/src/lib/style/package.json",
+            "entryFile": "libs/utils/src/lib/style/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/utils/src/lib/style/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/utils/src/lib/style/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/utils/src/lib/style"],
+          "options": {
+            "jestConfig": "libs/utils/src/lib/style/jest.config.js",
             "passWithNoTests": true
           }
         }

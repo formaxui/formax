@@ -40,6 +40,9 @@
       "tags": [],
       "implicitDependencies": ["components"]
     },
+    "components-src-lib-base": {
+      "tags": []
+    },
     "components-src-lib-button": {
       "tags": []
     },
@@ -50,6 +53,12 @@
       "tags": []
     },
     "types": {
+      "tags": []
+    },
+    "utils": {
+      "tags": []
+    },
+    "utils-src-lib-style": {
       "tags": []
     },
     "website": {

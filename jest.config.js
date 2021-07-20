@@ -6,5 +6,8 @@ module.exports = {
     '<rootDir>/libs/components/src/lib/button',
     '<rootDir>/libs/types',
     '<rootDir>/libs/storybook',
+    '<rootDir>/libs/components/src/lib/base',
+    '<rootDir>/libs/utils',
+    '<rootDir>/libs/utils/src/lib/style',
   ],
 };
