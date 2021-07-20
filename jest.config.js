@@ -11,5 +11,6 @@ module.exports = {
     '<rootDir>/libs/utils/src/lib/style',
     '<rootDir>/libs/components/src/lib/window',
     '<rootDir>/libs/components/src/lib/titlebar',
+    '<rootDir>/libs/design-language',
   ],
 };

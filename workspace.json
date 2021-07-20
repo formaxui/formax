@@ -308,6 +308,38 @@
         }
       }
     },
+    "design-language": {
+      "root": "libs/design-language",
+      "sourceRoot": "libs/design-language/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/design-language/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/design-language"],
+          "options": {
+            "jestConfig": "libs/design-language/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/design-language",
+            "tsConfig": "libs/design-language/tsconfig.lib.json",
+            "packageJson": "libs/design-language/package.json",
+            "main": "libs/design-language/src/index.ts",
+            "assets": ["libs/design-language/*.md"]
+          }
+        }
+      }
+    },
     "storybook": {
       "root": "libs/storybook",
       "sourceRoot": "libs/storybook/src",

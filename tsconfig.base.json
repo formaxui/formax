@@ -18,6 +18,7 @@
       "@formaxui/base": ["libs/components/src/lib/base/src/index.ts"],
       "@formaxui/button": ["libs/components/src/lib/button/src/index.ts"],
       "@formaxui/components": ["libs/components/src/index.ts"],
+      "@formaxui/design-language": ["libs/design-language/src/index.ts"],
       "@formaxui/glass": ["libs/components/src/lib/glass/src/index.ts"],
       "@formaxui/storybook": ["libs/storybook/src/index.ts"],
       "@formaxui/style": ["libs/utils/src/lib/style/src/index.ts"],

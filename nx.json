@@ -1,5 +1,5 @@
 {
-  "npmScope": "formax",
+  "npmScope": "formaxui",
   "affected": {
     "defaultBase": "master"
   },
@@ -53,6 +53,9 @@
       "tags": []
     },
     "components-src-lib-window": {
+      "tags": []
+    },
+    "design-language": {
       "tags": []
     },
     "storybook": {

@@ -1,0 +1,23 @@
+{
+  "name": "@formaxui/design-language",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "dependencies": {
+    "@diez/engine": "^10.6.0",
+    "@diez/prefabs": "^10.6.0"
+  },
+  "devDependencies": {
+    "@diez/compiler-core": "^10.6.0",
+    "@diez/extractors": "^10.6.0",
+    "@diez/start": "^10.6.0",
+    "@diez/stdlib": "^10.6.0",
+    "diez": "^10.6.0",
+    "semver": "^6.0.0",
+    "typescript": "~4.2.4"
+  },
+  "scripts": {
+    "start": "diez start",
+    "demo": "diez start web"
+  }
+}
